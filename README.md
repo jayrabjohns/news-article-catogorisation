@@ -9,17 +9,17 @@ Submitted as coursework in my second year at the University of Bath.
 ![multinomial naive bayes](img/multinomial-naive-bayes.png)
 
 The category with the lowest precision is `rec.sport.hockey`, i.e. articles written about hockey.
-This suggestes this classifier has the lowest confidence when classifying these articles. There is a higher risk of false positives, and in turn we can't trust when it classifies an article re.sport.hockey.
+This suggests this classifier has the lowest confidence when classifying these articles. There is a higher risk of false positives, and in turn, we can't trust when it classifies an article re.sport.hockey.
 
 The category with the lowest recall is `red.autos`, i.e. articles written about cars.
-This suggests this classifier will have more false negatives in comparison with other categories. There's a higher chance it has missclassified an article as not part of this category.
+This suggests this classifier will have more false negatives in comparison with other categories. There's a higher chance it has misclassified an article as not part of this category.
 
 
 ![multinomial naive bayes confusion matrix](img/mnnb-conf-matrix.png)
 
 Column 5 has average values outside of the diagonal, meaning it the has highest number of false positives out of any category. This corresponds to a low precision for category 5. If we check the 5th index in the labels list, we can see it corresponds to `rec.sport.hockey`, which as shown above does indeed have the lowest precision.
 
-The row with the highest average values, ignoring the diagonal, is row 2. This means column 2 has the highest number of false negatives, corresponding to a low recall. Checking the list of labels, we see index 2 corresponds to `rec.autos` which, as shown above, is the class with the lowset recall.
+The row with the highest average values, ignoring the diagonal, is row 2. This means column 2 has the highest number of false negatives, corresponding to a low recall. Checking the list of labels, we see index 2 corresponds to `rec.autos` which, as shown above, is the class with the lowest recall.
 
 Overall, this corresponds with the values found before and is relatively intuitive.
 
